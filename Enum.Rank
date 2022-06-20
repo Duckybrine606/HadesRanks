@@ -1,3 +1,5 @@
+/* Main Enum With Rank list and base code */
+
 package main;
 
 import org.bukkit.ChatColor;
