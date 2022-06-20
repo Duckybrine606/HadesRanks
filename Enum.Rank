@@ -1,0 +1,34 @@
+package main;
+
+import org.bukkit.ChatColor;
+
+public enum Rank {
+	
+	OWNER(ChatColor.DARK_RED + "OWNER"),
+	HEAD_ADMIN(ChatColor.RED + "HEAD-ADMIN"),
+    ADMIN(ChatColor.GOLD + "ADMIN"),
+    BUILDER(ChatColor.DARK_AQUA + "BUILDER"),
+    MOD(ChatColor.DARK_PURPLE + "MOD"),
+    HELPER(ChatColor.LIGHT_PURPLE + "HELPER"),
+    WITCH(ChatColor.DARK_RED + "WITCH"),
+    MVP_PLUS(ChatColor.AQUA + "MVP+"),
+    MVP(ChatColor.AQUA + "MVP"),
+    VIP_PLUS(ChatColor.GREEN + "VIP+"),
+    VIP(ChatColor.GREEN + "VIP"),
+    MEMBER(ChatColor.GRAY + "MEMBER");
+	
+	private String prefix;
+	
+	Rank(String prefix) {
+		this.prefix=prefix;
+	}
+	
+	public String getPrefix() {
+		return prefix;
+	}
+	
+	public boolean hasPrefix() {
+	    return prefix !=null;
+	}
+
+}
