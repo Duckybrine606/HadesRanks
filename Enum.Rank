@@ -11,6 +11,7 @@ public enum Rank {
     MOD(ChatColor.DARK_PURPLE + "MOD"),
     HELPER(ChatColor.LIGHT_PURPLE + "HELPER"),
     WITCH(ChatColor.DARK_RED + "WITCH"),
+    YT(ChatColor.RED + "YouTube"),
     MVP_PLUS(ChatColor.AQUA + "MVP+"),
     MVP(ChatColor.AQUA + "MVP"),
     VIP_PLUS(ChatColor.GREEN + "VIP+"),
