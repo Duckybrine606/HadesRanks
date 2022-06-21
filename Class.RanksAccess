@@ -1,1 +1,25 @@
+package main;
+
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
+import main.Main;
+
+public class RanksAccess {
+	
+	private FileConfiguration config = Main.getInstance().getConfig();
+
+	public void setRank(Player player, Rank rank) {
+	    config.set("Ranks." + player.getUniqueId(), rank.toString());
+	}
+
+	public Rank getRank(Player player) {
+	    String val = config.getString("Ranks." + player.getUniqueId());
+	    return (val == null ? Rank.ROOKIE : Rank.valueOf(val));
+	}
+
+	public boolean hasRank(Player player, Rank rank) {
+	    return (getRank(player).compareTo(rank) >= 0);
+	}
+
+}
 
