@@ -9,6 +9,7 @@ public enum Rank {
 	OWNER(ChatColor.DARK_RED + "OWNER"),
 	HEAD_ADMIN(ChatColor.RED + "HEAD-ADMIN"),
     ADMIN(ChatColor.GOLD + "ADMIN"),
+    DEVELOPER(ChatColor.BLUE + "DEVELOPER"),
     BUILDER(ChatColor.DARK_AQUA + "BUILDER"),
     MOD(ChatColor.DARK_PURPLE + "MOD"),
     HELPER(ChatColor.LIGHT_PURPLE + "HELPER"),
