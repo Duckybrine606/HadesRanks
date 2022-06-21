@@ -1,0 +1,44 @@
+package main;
+
+import org.bukkit.configuration.file.FileConfiguration;
+
+public class Main {
+	
+	private static Main instance;
+
+	public void onEnable() {
+	    instance = this;
+	    getDataFolder().mkdirs();
+	    saveDefaultConfig();
+	}
+
+	private void saveDefaultConfig() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private Object getDataFolder() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void onDisable() {
+	    saveConfig();
+	    instance = null;
+	}
+
+	private void saveConfig() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static Main getInstance() {
+	    return instance;
+	}
+
+	public FileConfiguration getConfig() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
