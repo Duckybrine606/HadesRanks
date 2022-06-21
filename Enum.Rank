@@ -18,7 +18,7 @@ public enum Rank {
     MVP(ChatColor.AQUA + "MVP"),
     VIP_PLUS(ChatColor.GREEN + "VIP+"),
     VIP(ChatColor.GREEN + "VIP"),
-    MEMBER(ChatColor.GRAY + "MEMBER");
+    ROOKIE(ChatColor.GRAY + "ROOKIE");
 	
 	private String prefix;
 	
