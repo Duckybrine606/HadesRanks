@@ -8,7 +8,7 @@ public class Main {
 
 	public void onEnable() {
 	    instance = this;
-	    getDataFolder().mkdirs();
+	    getDataFolder().mkdirs(); //Error Here//
 	    saveDefaultConfig();
 	}
 
