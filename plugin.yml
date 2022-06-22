@@ -1,0 +1,27 @@
+name: HadesRanks
+version: 1.0
+author: Duckybrine_606
+main: main.Main
+api-version: 1.8.8
+commands:
+   HadesRanks:
+      aliases:
+         - hrhelp
+      description: Display Plugin Commands
+      usage: /hrhelp
+      permission: hadesranks.help     
+   HadesRankSet:
+      aliases:
+         -hsetrank
+      description: Sets a player's Rank
+      usage: /hsetrank
+      permission: hadesranks.set
+     
+permissions:
+   hadesranks.help:
+      description: Permission for /hrhelp 
+      default: false
+   hadesranks.set:
+      description: Permission for /hsetrank
+      default: false
+   
